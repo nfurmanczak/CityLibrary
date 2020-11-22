@@ -1,0 +1,112 @@
+===================================
+ Kurzspezifikation zur Entwicklung 
+ der App für die Stadtbibliothek
+===================================
+
+***** Glossar - Englisch/Deutsch
+--------------------------------
+CityLibraray: Stadtbibliothek
+Member: Mitglied der Bibliothek
+Employee: Mitarbeiter der Bibliothek
+Admin: Personenverwaltung der Bibliothek
+Medium: Medientitel
+Item: einzelnes Medienexemplar zu Medientitel
+
+***** UseCases
+--------------
+
+Eine Person 
+... meldet sich beim System an: 
+    Funktion: 'Login'
+    Info: Weitere Menüs hängen von Rolle ab
+
+... sucht nach Medientiteln: 
+    Funktion: 'FindMedium'
+    Info: Listet Medientitel auf unabhängig 
+        von Verfügbarkeit von Medienexemplaren
+    Hinweis: Die Person muss dafür nicht angemeldet sein
+
+Ein Mitglied ...
+... sucht nach verfügbaren Medienexemplaren: 
+    Funktion: 'FindItem'
+    Info: Status entscheidet, ob 
+        direkt leihbar oder reservierbar
+    
+... leiht Medienexemplar
+    Funktion: 'BorrowItem'
+    Info: Zusammenhang zu 'FindItem'
+    
+... bringt Medienexemplar zurück
+    Funktion: 'ReturnItem'
+    Info: Zusammenhang zu 'FindItem'
+    
+... reserviert Medienexemplar
+    Funktion: 'ReserveItem'
+    Info: Zusammenhang zu 'FindItem'
+
+... storniert Reservierung
+    Funktion: 'CancelReservation'
+    Info: Zusammenhang zu 'ReserveItem'
+   
+    
+Ein Mitarbeiter ...
+... ermittelt Anzahl der Exemplare pro Medientitel
+    Funktion: 'CheckItemsCount'
+
+... ermittelt ausgeliehene Medientitel
+    Funktion: 'FindOpenBorrows'
+
+... ermittelt nicht zurückgebrachte Medientitel
+    Funktion: 'FindTimedoutBorrows'
+    
+... fügt Medientitel hinzu
+    Funktion: 'AddMedium'
+    
+... fügt Medienexemplar hinzu
+    Funktion: 'AddItem'
+    Info: Medientitel muss bereits existieren
+    
+... enfernt Medienexemplar
+    Funktion: 'RemoveItem'
+    
+    
+Ein Administrator ...
+... erfasst eine neue Person
+    Funktion: 'RegisterPerson'
+    Info: Er vergibt dabei die Rolle der Person
+    
+Das System ...
+... importiert intial Personen aus Importdatei
+... erzeugt intial einige Mitarbeiter und Administratoren
+... importiert intial Medientitel aus Importdatei
+... erzeugt intial zufällig 1-5 Medienexemplare pro Medientitel
+
+***** User Interface Klassen (Konsolenanwendung)
+------------------------------------------------
+CityLibrary.Ui.Program : Programmrahmen mit Main-Methode
+CityLibrary.Ui.UiMenu : Menü der Anwendung
+CityLibrary.Ui.UiMenuItem : Einzelner Menüauswahlpunkt
+CityLibrary.Ui.UiHelpers : Hilfsmethoden
+
+***** Serviceklassen
+--------------------
+CityLibrary.Svc.SvcCityLibrary : Service Schnittstelle
+CityLibrary.Svc.SvcImport : Importfunktion
+
+***** Modellklassen
+-------------------
+CityLibrary.Model.ModelContext
+CityLibrary.Model.Person
+CityLibrary.Model.Admin
+CityLibrary.Model.Employee
+CityLibrary.Model.Member
+CityLibrary.Model.Medium
+CityLibrary.Model.Borrow
+CityLibrary.Model.Item
+
+***** Logging
+-------------
+Gso.FS.EFCore.Logging.GsoLoggerProvider
+Gso.FS.EFCore.Logging.GsoLogger
+
+===================================

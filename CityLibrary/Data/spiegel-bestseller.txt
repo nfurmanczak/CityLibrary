@@ -1,0 +1,734 @@
+﻿
+### version 2
+
+### all categories
+CATEGORY:Belletristik
+CATEGORY:Bilderbuch
+CATEGORY:Essen & Trinken
+CATEGORY:Hobby & Kreativität
+CATEGORY:Jugendroman
+CATEGORY:Kinder & Jugend
+CATEGORY:Kinderbücher
+CATEGORY:Leben & Gesundheit
+CATEGORY:Natur & Garten
+CATEGORY:Sachbuch
+CATEGORY:Spielfilm
+CATEGORY:TV & Hobby
+CATEGORY:Wirtschaft
+
+### all formats
+FORMAT:Buch
+FORMAT:CD
+FORMAT:DVD
+FORMAT:Hardcover
+FORMAT:Paperback
+FORMAT:Taschenbuch
+
+### titles by category and format
+CATEGORY:Belletristik
+FORMAT:Hardcover
+
+AUTHOR:Owens, Delia
+TITLE:Der Gesang der Flusskrebse
+EAN:9783446264199
+PUBLISHER:hanserblau
+DATE:Juli 2019
+PRICE:22,00€
+
+AUTHOR:Matthiessen, Susanne
+TITLE:Ozelot und Friesennerz
+EAN:9783550200649
+PUBLISHER:Ullstein
+DATE:Juni 2020
+PRICE:20,00€
+
+AUTHOR:Bergmann, Renate
+TITLE:Dann bleiben wir eben zu Hause!
+EAN:9783548064345
+PUBLISHER:Ullstein
+DATE:Mai 2020
+PRICE:8,00€
+
+AUTHOR:Collins, Suzanne
+TITLE:Die Tribute von Panem. Das Lied von Vogel und Schlange
+EAN:9783789120022
+PUBLISHER:Oetinger
+DATE:Mai 2020
+PRICE:26,00€
+
+AUTHOR:Balzano, Marco
+TITLE:Ich bleibe hier
+EAN:9783257071214
+PUBLISHER:Diogenes
+DATE:Juni 2020
+PRICE:22,00€
+
+CATEGORY:Sachbuch
+FORMAT:Hardcover
+
+AUTHOR:Precht, Richard David
+TITLE:Künstliche Intelligenz und der Sinn des Lebens
+EAN:9783442315611
+PUBLISHER:Goldmann
+DATE:Juni 2020
+PRICE:20,00€
+
+AUTHOR:Schirach, Ferdinand; Kluge, Alexander
+TITLE:Trotzdem
+EAN:9783630876580
+PUBLISHER:Luchterhand
+DATE:Mai 2020
+PRICE:8,00€
+
+AUTHOR:Göpel, Maja
+TITLE:Unsere Welt neu denken
+EAN:9783550200793
+PUBLISHER:Ullstein
+DATE:Februar 2020
+PRICE:17,99€
+
+AUTHOR:Perry, Philippa
+TITLE:Das Buch, von dem du dir wünschst, deine Eltern hätten es gelesen
+EAN:9783550200748
+PUBLISHER:Ullstein
+DATE:April 2020
+PRICE:19,99€
+
+AUTHOR:Kast, Bas
+TITLE:Der Ernährungskompass
+EAN:9783570103197
+PUBLISHER:C. Bertelsmann
+DATE:März 2018
+PRICE:20,00€
+
+CATEGORY:Belletristik
+FORMAT:Paperback
+
+AUTHOR:Bannalec, Jean-Luc
+TITLE:Bretonische Spezialitäten
+EAN:9783462054019
+PUBLISHER:Kiepenheuer & Witsch
+DATE:Juni 2020
+PRICE:16,00€
+
+AUTHOR:Jónasson, Ragnar
+TITLE:Dunkel
+EAN:9783442758609
+PUBLISHER:btb
+DATE:Mai 2020
+PRICE:15,00€
+
+AUTHOR:Ribeiro, Gil
+TITLE:Schwarzer August
+EAN:9783462052695
+PUBLISHER:Kiepenheuer & Witsch
+DATE:Juni 2020
+PRICE:16,00€
+
+AUTHOR:Jónasson, Ragnar
+TITLE:Insel
+EAN:9783442758616
+PUBLISHER:btb
+DATE:Juli 2020
+PRICE:15,00€
+
+AUTHOR:Moyes, Jojo
+TITLE:Der Klang des Herzens
+EAN:9783499267925
+PUBLISHER:Rowohlt
+DATE:April 2020
+PRICE:16,00€
+
+CATEGORY:Sachbuch
+FORMAT:Paperback
+
+AUTHOR:von Berlepsch, Thimon; Bitzer, Lisa
+TITLE:Update für dein Unterbewusstsein
+EAN:9783424202267
+PUBLISHER:Ariston
+DATE:März 2020
+PRICE:18,00€
+
+AUTHOR:Stahl, Stefanie
+TITLE:Das Kind in dir muss Heimat finden
+EAN:9783424631074
+PUBLISHER:Kailash
+DATE:November 2015
+PRICE:14,99€
+
+AUTHOR:Plöger, Sven
+TITLE:Zieht euch warm an, es wird heiß!
+EAN:9783864892868
+PUBLISHER:Westend
+DATE:Mai 2020
+PRICE:19,95€
+
+AUTHOR:Hasters, Alice
+TITLE:Was weiße Menschen nicht über Rassismus hören wollen
+EAN:9783446264250
+PUBLISHER:hanserblau
+DATE:September 2019
+PRICE:17,00€
+
+AUTHOR:Bode, Sabine
+TITLE:Älterwerden ist voll sexy, man stöhnt mehr
+EAN:9783442159918
+PUBLISHER:Goldmann
+DATE:November 2019
+PRICE:13,00€
+
+CATEGORY:Belletristik
+FORMAT:Taschenbuch
+
+AUTHOR:Dusse, Karsten
+TITLE:Achtsam morden
+EAN:9783453439689
+PUBLISHER:Heyne
+DATE:Juni 2019
+PRICE:10,99€
+
+AUTHOR:Wolf, Klaus-Peter
+TITLE:Rupert undercover. Ostfriesische Mission
+EAN:9783596700066
+PUBLISHER:Fischer
+DATE:Juni 2020
+PRICE:12,00€
+
+AUTHOR:Bergmann, Renate
+TITLE:Ans Vorzelt kommen Geranien dran
+EAN:9783548062617
+PUBLISHER:Ullstein
+DATE:Juni 2020
+PRICE:11,99€
+
+AUTHOR:Martin, Pierre
+TITLE:Madame le Commissaire und die Frau ohne Gedächtnis
+EAN:9783426521991
+PUBLISHER:Knaur
+DATE:Juli 2020
+PRICE:10,99€
+
+AUTHOR:Ironmonger, John
+TITLE:Der Wal und das Ende der Welt
+EAN:9783596704194
+PUBLISHER:Fischer
+DATE:März 2020
+PRICE:12,00€
+
+CATEGORY:Sachbuch
+FORMAT:Taschenbuch
+
+AUTHOR:Bhakdi, Sucharit; Reiss, Karina
+TITLE:Corona Fehlalarm?
+EAN:9783990601914
+PUBLISHER:Goldegg
+DATE:Juni 2020
+PRICE:15,00€
+
+AUTHOR:Strelecky, John
+TITLE:Das Café am Rande der Welt
+EAN:9783423209694
+PUBLISHER:dtv
+DATE:Februar 2007
+PRICE:8,95€
+
+AUTHOR:Harari, Yuval Noah
+TITLE:Eine kurze Geschichte der Menschheit
+EAN:9783570552698
+PUBLISHER:Pantheon
+DATE:Februar 2015
+PRICE:14,99€
+
+AUTHOR:Rouzbeh, Adrian
+TITLE:Erfolg aus Prinzip
+EAN:9783548063133
+PUBLISHER:Ullstein
+DATE:Juli 2020
+PRICE:10,99€
+
+AUTHOR:Strelecky, John
+TITLE:Big Five
+EAN:9783423345286
+PUBLISHER:dtv
+DATE:Februar 2009
+PRICE:9,90€
+
+CATEGORY:Jugendroman
+FORMAT:Buch
+
+AUTHOR:Brandis, Katja
+TITLE:Seawalkers. Wilde Wellen
+EAN:9783401605272
+PUBLISHER:Arena
+DATE:Juni 2020
+PRICE:14,00€
+
+AUTHOR:Dabos, Christelle
+TITLE:Die Spiegelreisende. Im Sturm der Echos
+EAN:9783458178583
+PUBLISHER:Insel
+DATE:Juni 2020
+PRICE:18,00€
+
+AUTHOR:Paluten; Klaas Kern
+TITLE:Schlamassel im Weltall
+EAN:9783960961062
+PUBLISHER:Community Editions
+DATE:März 2020
+PRICE:12,00€
+
+AUTHOR:Riordan, Rick
+TITLE:Die Abenteuer des Apollo. Die Gruft des Tyrannen
+EAN:9783551556912
+PUBLISHER:Carlsen
+DATE:Juni 2020
+PRICE:19,99€
+
+CATEGORY:Sachbuch
+FORMAT:Buch
+
+AUTHOR:Müller, Thomas; Wolff, Julien
+TITLE:Mein Weg zum Fußballprofi
+EAN:9783789115172
+PUBLISHER:Oetinger
+DATE:Juni 2020
+PRICE:14,00€
+
+AUTHOR:Pautner, Norbert
+TITLE:Ich kann 1000 Dinge zeichnen. Kritzeln wie ein Profi!
+EAN:9783809439646
+PUBLISHER:Bassermann
+DATE:Oktober 2018
+PRICE:9,99€
+
+AUTHOR:Neubauer, Annette
+TITLE:tiptoi® Dinosaurier
+EAN:9783473554072
+PUBLISHER:Ravensburger
+DATE:August 2017
+PRICE:9,99€
+
+AUTHOR:Busch, Nikki
+TITLE:Dein Mädchenbuch:über 230 Ideen für mehr Glitzer im Leben
+EAN:9783551187833
+PUBLISHER:Carlsen
+DATE:Juli 2018
+PRICE:12,00€
+
+AUTHOR:Busch, Nikki; Auer, Margit
+TITLE:Die Schule der magischen Tiere. Das große Rätselbuch
+EAN:9783551186607
+PUBLISHER:Carlsen
+DATE:Juni 2017
+PRICE:9,99€
+
+CATEGORY:Bilderbuch
+FORMAT:Buch
+
+AUTHOR:Kling, Marc-Uwe
+TITLE:Das NEINhorn
+EAN:9783551518415
+PUBLISHER:Carlsen
+DATE:Oktober 2019
+PRICE:13,00€
+
+AUTHOR:Bright, Rachel
+TITLE:Der Löwe in dir
+EAN:9783734820212
+PUBLISHER:Magellan
+DATE:Januar 2016
+PRICE:14,00€
+
+AUTHOR:Mühle, Jörg
+TITLE:Nur noch kurz die Ohren kraulen?
+EAN:9783895653001
+PUBLISHER:Moritz
+DATE:Februar 2020
+PRICE:8,95€
+
+AUTHOR:Sternbaum, Nico
+TITLE:Schüttel den Apfelbaum. Ein Mitmachbuch
+EAN:9783809436720
+PUBLISHER:Bassermann
+DATE:März 2017
+PRICE:8,99€
+
+AUTHOR:Scheffler, Axel; Donaldson, Julia
+TITLE:Der Grüffelo
+EAN:9783407792914
+PUBLISHER:Beltz
+DATE:März 2020
+PRICE:9,95€
+
+CATEGORY:Kinderbücher
+FORMAT:Buch
+
+AUTHOR:Auer, Margit
+TITLE:Die Schule der magischen Tiere. Endlich Ferien - Benni und Henrietta
+EAN:9783551653352
+PUBLISHER:Carlsen
+DATE:Juni 2020
+PRICE:12,00€
+
+AUTHOR:Pantermüller, Alice
+TITLE:Mein Lotta-Leben. Das letzte Eichhorn
+EAN:9783401604961
+PUBLISHER:Arena
+DATE:Mai 2020
+PRICE:12,00€
+
+AUTHOR:Yamada, Kobi
+TITLE:Vielleicht. Eine Geschichte über die unendlich vielen Begabungen in jedem von uns
+EAN:9783947188857
+PUBLISHER:Adrian
+DATE:September 2019
+PRICE:12,95€
+
+AUTHOR:Habersack, Charlotte
+TITLE:Bitte nicht öffnen. Magic!
+EAN:9783551652157
+PUBLISHER:Carlsen
+DATE:Juli 2020
+PRICE:12,00€
+
+AUTHOR:Siegner, Ingo
+TITLE:Der kleine Drache Kokosnuss und der chinesische Drache
+EAN:9783570177341
+PUBLISHER:cbj
+DATE:Mai 2020
+PRICE:8,99€
+
+CATEGORY:Sachbuch
+FORMAT:CD
+
+AUTHOR:Bannalec, Jean-Luc
+TITLE:Bretonische Spezialitäten, 2 Audio-MP3
+EAN:9783839817728
+PUBLISHER:Argon
+DATE:Juni 2020
+PRICE:15,45€
+
+CATEGORY:Belletristik
+FORMAT:CD
+
+AUTHOR:Kling, Marc-Uwe
+TITLE:Die Känguru-Chroniken, 4 Audio-CDs
+EAN:9783869091082
+PUBLISHER:Hörbuch Hamburg
+DATE:Juli 2012
+PRICE:14,30€
+
+AUTHOR:Dusse, Karsten
+TITLE:Achtsam morden, 6 Audio-CDs
+EAN:9783837146936
+PUBLISHER:random house audio
+DATE:Juni 2019
+PRICE:12,01€
+
+AUTHOR:Kling, Marc-Uwe
+TITLE:Die Känguru-Offenbarung, 6 Audio-CDs
+EAN:9783869091358
+PUBLISHER:Hörbuch Hamburg
+DATE:März 2014
+PRICE:10,66€
+
+AUTHOR:Kling, Marc-Uwe
+TITLE:Die Känguru-Apokryphen, 4 Audio-CDs
+EAN:9783957131492
+PUBLISHER:Hörbuch Hamburg
+DATE:Oktober 2018
+PRICE:9,70€
+
+CATEGORY:Kinder & Jugend
+FORMAT:CD
+
+AUTHOR:
+TITLE:Die drei ??? - und der Mottenmann, 1 Audio-CD
+EAN:0190759874028
+PUBLISHER:Sony Music Entertainment
+DATE:Juli 2020
+PRICE:8,99€
+
+AUTHOR:Kling, Marc-Uwe
+TITLE:Das NEINhorn, Der Tag, an dem der Opa den Wasserkocher auf den Herd gestellt hat, 1 Audio-CD
+EAN:9783745601411
+PUBLISHER:Silberfisch
+DATE:Juli 2020
+PRICE:7,82€
+
+AUTHOR:
+TITLE:Die drei ??? Das rätselhafte Erbe, 1 Audio-CD
+EAN:0190759873922
+PUBLISHER:Europa (Sony Music)
+DATE:Mai 2020
+PRICE:8,83€
+
+AUTHOR:
+TITLE:Bibi & Tina - Hoch zu Ross, 2 Audio-CD
+EAN:4001504128104
+PUBLISHER:Kiddinx Media
+DATE:Mai 2020
+PRICE:11,26€
+
+AUTHOR:Siegner, Ingo
+TITLE:Der kleine Drache Kokosnuss und der chinesische Drache, 1 Audio-CD
+EAN:9783837150537
+PUBLISHER:cbj audio
+DATE:Mai 2020
+PRICE:7,57€
+
+CATEGORY:Spielfilm
+FORMAT:DVD
+
+AUTHOR:
+TITLE:Little Women
+EAN:4030521756144
+PUBLISHER:Sony Pictures
+PRICE:14,26€
+
+AUTHOR:
+TITLE:Die fantastische Reise des Dr. Dolittle
+EAN:5053083204365
+PUBLISHER:Universal Pictures
+PRICE:13,65€
+
+AUTHOR:
+TITLE:Die Eiskönigin 2
+EAN:8717418560102
+PUBLISHER:Walt Disney
+PRICE:12,52€
+
+AUTHOR:
+TITLE:1917
+EAN:5053083206604
+PUBLISHER:Universal Pictures
+PRICE:15,08€
+
+AUTHOR:
+TITLE:Knives Out. Mord ist Familiensache
+EAN:4061229123204
+PUBLISHER:Leonine Distribution
+PRICE:13,92€
+
+CATEGORY:TV & Hobby
+FORMAT:DVD
+
+AUTHOR:
+TITLE:Jokehnen oder Wie lange fährt man von Ostpreußen nach Deutschland?
+EAN:4052912473423
+PUBLISHER:Studio Hamburg Enterprises
+PRICE:14,77€
+
+AUTHOR:
+TITLE:Leberkäsjunkie
+EAN:4009750299715
+PUBLISHER:EuroVideo Medien
+PRICE:10,92€
+
+AUTHOR:
+TITLE:Die Rosenheim-Cops, Staffel.19
+EAN:4052912070196
+PUBLISHER:Studio Hamburg Enterprises
+PRICE:30,58€
+
+AUTHOR:
+TITLE:Meister Eder und sein Pumuckl, Staffel.1
+EAN:0602577868733
+PUBLISHER:Universal Music
+PRICE:23,75€
+
+AUTHOR:
+TITLE:Meister Eder und sein Pumuckl, Staffel.2
+EAN:0602577868795
+PUBLISHER:Universal Music
+PRICE:23,75€
+
+CATEGORY:Leben & Gesundheit
+FORMAT:Buch
+
+AUTHOR:Rubin, Franziska; Strigin, Gudrun
+TITLE:Die besten Hausmittel
+EAN:9783954531912
+PUBLISHER:Becker Joest Volk
+DATE:Mai 2020
+PRICE:29,95€
+
+AUTHOR:
+TITLE:Fünf Hausmittel ersetzen eine Drogerie
+EAN:9783946658009
+PUBLISHER:Smarticular
+DATE:April 2018
+PRICE:14,95€
+
+AUTHOR:Rubin, Franziska
+TITLE:Heilen mit Lebensmitteln. Meine Top 10 gegen 100 Krankheiten
+EAN:9783898839471
+PUBLISHER:ZS Verlag
+DATE:September 2019
+PRICE:24,99€
+
+AUTHOR:Tolle, Eckhart
+TITLE:Jetzt! Die Kraft der Gegenwart
+EAN:9783899013016
+PUBLISHER:Kamphausen
+DATE:März 2010
+PRICE:14,80€
+
+AUTHOR:
+TITLE:Selber machen statt kaufen - Küche
+EAN:9783946658030
+PUBLISHER:Smarticular
+DATE:Juni 2017
+PRICE:14,95€
+
+CATEGORY:Essen & Trinken
+FORMAT:Buch
+
+AUTHOR:Lafer, Johann; Bracht, Petra; Liebscher-Bracht, Roland
+TITLE:Essen gegen Arthrose
+EAN:9783833874253
+PUBLISHER:Gräfe und Unzer
+DATE:April 2020
+PRICE:29,99€
+
+AUTHOR:Purviance, Jamie
+TITLE:Weber's Grillbibel
+EAN:9783833818639
+PUBLISHER:Gräfe und Unzer
+DATE:Februar 2010
+PRICE:24,95€
+
+AUTHOR:Ziegeweidt, Tim; Buchner, Sebastian; Sauerländer BBCrew
+TITLE:Sauerländer BBCrew Dutch Oven
+EAN:9783625183396
+PUBLISHER:Naumann & Göbel
+DATE:Juni 2018
+PRICE:9,99€
+
+AUTHOR:Ottolenghi, Yotam
+TITLE:Simple. Das Kochbuch
+EAN:9783831035830
+PUBLISHER:Dorling Kindersley
+DATE:September 2018
+PRICE:28,00€
+
+AUTHOR:Reif, Pamela
+TITLE:You Deserve This
+EAN:9783960960744
+PUBLISHER:Community Editions
+DATE:Mai 2019
+PRICE:20,00€
+
+CATEGORY:Natur & Garten
+FORMAT:Buch
+
+AUTHOR:Wadas, René
+TITLE:Der Pflanzenarzt:Ein gesunder Garten ohne Chemie
+EAN:9783499003028
+PUBLISHER:Rowohlt
+DATE:März 2020
+PRICE:12,00€
+
+AUTHOR:Schlegl-Kofler, Katharina
+TITLE:Welpen-Erziehung
+EAN:9783833811715
+PUBLISHER:Gräfe und Unzer
+DATE:September 2010
+PRICE:16,99€
+
+AUTHOR:Rütter, Martin; Buisman, Andrea
+TITLE:Welpentraining mit Martin Rütter
+EAN:9783440122730
+PUBLISHER:Kosmos
+DATE:April 2015
+PRICE:19,99€
+
+AUTHOR:Spohn, Margot
+TITLE:Was blüht denn da?
+EAN:9783440139653
+PUBLISHER:Kosmos
+DATE:Februar 2015
+PRICE:19,99€
+
+AUTHOR:Oftring, Bärbel
+TITLE:Wird das was oder kann das weg?
+EAN:9783440167854
+PUBLISHER:Kosmos
+DATE:Januar 2020
+PRICE:17,00€
+
+CATEGORY:Hobby & Kreativität
+FORMAT:Buch
+
+AUTHOR:Pautner, Norbert
+TITLE:Handlettering. Die 33 schönsten Alphabete mit Rahmen, Ornamenten und Bordüren
+EAN:9783809438038
+PUBLISHER:Bassermann
+DATE:Oktober 2017
+PRICE:7,99€
+
+AUTHOR:Pautner, Norbert
+TITLE:Landkarten Rätselbuch
+EAN:9783772471957
+PUBLISHER:Frech
+DATE:April 2020
+PRICE:15,99€
+
+AUTHOR:Bac, F. Sehnaz
+TITLE:Steine kreativ bemalen
+EAN:9783936896961
+PUBLISHER:Ökobuch
+DATE:April 2018
+PRICE:13,95€
+
+AUTHOR:Schenkel, Yan
+TITLE:Pica Pau und ihre neuen Häkelfreunde
+EAN:9783960937890
+PUBLISHER:Edition Michael Fischer
+DATE:Mai 2020
+PRICE:17,99€
+
+AUTHOR:Ambrosiewicz, Anna
+TITLE:Kreativ-Set Steine bemalen im Boho-Stil
+EAN:9783772443664
+PUBLISHER:Frech
+DATE:März 2020
+PRICE:12,99€
+
+CATEGORY:Wirtschaft
+FORMAT:Buch
+
+AUTHOR:Dewayne, Patrick
+TITLE:Geld kann jeder & Du jetzt auch
+EAN:9783841906601
+PUBLISHER:Edel Books
+DATE:Juni 2020
+PRICE:17,95€
+
+AUTHOR:Sander, Beate
+TITLE:Der Aktien- und Börsenführerschein
+EAN:9783959722797
+PUBLISHER:Finanzbuch
+DATE:März 2020
+PRICE:29,99€
+
+AUTHOR:Stelter, Daniel
+TITLE:Coronomics
+EAN:9783593513218
+PUBLISHER:Campus
+DATE:Mai 2020
+PRICE:18,95€
+
+AUTHOR:Musk, Elon; Vance, Ashlee
+TITLE:Elon Musk
+EAN:9783898799065
+PUBLISHER:Finanzbuch
+DATE:Mai 2015
+PRICE:19,99€
+
+AUTHOR:Piketty, Thomas
+TITLE:Kapital und Ideologie
+EAN:9783406745713
+PUBLISHER:C.H. Beck
+DATE:März 2020
+PRICE:39,95€
