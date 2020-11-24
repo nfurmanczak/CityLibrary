@@ -10,7 +10,7 @@ namespace CityLibrary.Model
     public class ModelContext : DbContext
     {
         // Sqlite database file to utilize
-        public const string DataBaseFile = @"..\..\..\CityLibrary.Sqlite";
+        public const string DataBaseFile = @"../../../CityLibrary.Sqlite";
         public static ILoggerFactory loggerFactory = null;
         public DbSet<Person> Persons { get; set; } // Person Cache
         public DbSet<Medium> Mediums { get; set; } // Medium Cache

@@ -2,6 +2,7 @@
  * www.gso-koeln.de 2020
  */
 using CityLibrary.Model;
+using Microsoft.EntityFrameworkCore.Query.Expressions;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -72,8 +73,8 @@ namespace CityLibrary.Svc
                 IDictionary<string, int> hdrs = null;
 
                 // field mapping
-                const string FirstName = "Surname";
-                const string LastName = "GivenName";
+                const string FirstName = "GivenName";
+                const string LastName = "Surname";
                 const string Birthday = "Birthday";
 
                 // process expected header

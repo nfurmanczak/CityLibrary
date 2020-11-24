@@ -8,6 +8,7 @@ using Gso.FS.EFCore.Logging;
 using Microsoft.EntityFrameworkCore; // Include()
 using System;
 using System.Linq;
+using System.IO; 
 
 namespace CityLibrary.Ui
 {
@@ -72,6 +73,13 @@ namespace CityLibrary.Ui
 
                 Console.WriteLine("\nDone.");
                 Console.ReadLine();
+
+                foreach (var item in db.Persons.ToList())
+                {
+                    Console.WriteLine(item.FirstName);
+                    Console.WriteLine(item.LastName);
+                }
+                
             }
         }
 
