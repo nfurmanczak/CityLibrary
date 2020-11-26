@@ -38,10 +38,10 @@ namespace CityLibrary.Model
             dcob = dcob.UseLoggerFactory(loggerFactory);
 
             // inject Sqlite usage
-            //if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-            //    dcob.UseSqlite("Data Source=" + DataBaseFileWinOS);
-            //else
-            //    dcob.UseSqlite("Data Source=" + DataBaseFileWinOS);
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                dcob.UseSqlite("Data Source=" + DataBaseFileWinOS);
+            else
+                dcob.UseSqlite("Data Source=" + DataBaseFilemacOS);
             dcob.UseSqlite("Data Source=" + GetDataBaseFile());
         }
         protected override void OnModelCreating(ModelBuilder builder) {
