@@ -28,8 +28,7 @@ namespace CityLibrary.Svc
             }
         }
 
-        public IList<Medium> FindMedium(string pattern, int max, byte UserSelectOption)
-        {
+        public IList<Medium> FindMedium(string pattern, int max, byte UserSelectOption) {
             var comp = System.StringComparison.OrdinalIgnoreCase;
             IQueryable<Medium> query; 
 

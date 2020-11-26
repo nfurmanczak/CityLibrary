@@ -1,12 +1,11 @@
 /*
  * www.gso-koeln.de 2020
  */
-
 using Gso.FS.EFCore.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Runtime.InteropServices;
-using System; 
+
 
 namespace CityLibrary.Model
 {
@@ -22,11 +21,9 @@ namespace CityLibrary.Model
         public DbSet<Medium> Mediums { get; set; } // Medium Cache
         public DbSet<Item> Items { get; set; } // Item Cache
 
-        protected override void OnConfiguring(DbContextOptionsBuilder dcob)
-        {
+        protected override void OnConfiguring(DbContextOptionsBuilder dcob) {
             // enable logging
-            if (loggerFactory == null)
-            {
+            if (loggerFactory == null) {
                 //loggerFactory = LoggerFactory.Create(lbldr => lbldr.AddDebug());
                 //loggerFactory = LoggerFactory.Create(lbldr => lbldr.AddConsole());
                 //loggerFactory = LoggerFactory.Create(lbldr => lbldr.AddFilter("Microsoft.EntityFrameworkCore.Database.Command", LogLevel.Information).AddConsole());

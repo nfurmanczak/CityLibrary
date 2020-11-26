@@ -2,7 +2,6 @@
  * www.gso-koeln.de 2020
  */
 using CityLibrary.Model;
-using Microsoft.EntityFrameworkCore.Query.Expressions;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -287,7 +286,6 @@ namespace CityLibrary.Svc
         }
 
         public static DateTime? DateFromStr(string date) {
-            
             return date == null ? (DateTime?)null : DateTime.ParseExact(date, "MMMM yyyy", null);
         }
 
