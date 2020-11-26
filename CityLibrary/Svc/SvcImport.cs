@@ -287,6 +287,7 @@ namespace CityLibrary.Svc
         }
 
         public static DateTime? DateFromStr(string date) {
+            
             return date == null ? (DateTime?)null : DateTime.ParseExact(date, "MMMM yyyy", null);
         }
 

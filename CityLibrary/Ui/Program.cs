@@ -8,7 +8,8 @@ using Gso.FS.EFCore.Logging;
 using Microsoft.EntityFrameworkCore; // Include()
 using System;
 using System.Linq;
-using System.IO; 
+using System.IO;
+using System.Runtime.InteropServices;
 
 namespace CityLibrary.Ui
 {
@@ -22,8 +23,11 @@ namespace CityLibrary.Ui
             UiHelpers.InitConsole();
 
             // drop database file for testing purpose
-            //File.Delete(ModelContext.DataBaseFile);
-
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                File.Delete(ModelContext.DataBaseFileWinOS);
+            else
+                File.Delete(ModelContext.DataBaseFilemacOS);
+           
             using (var db = new ModelContext()) {
                 // create DB if not exists
                 db.Database.EnsureDeleted();

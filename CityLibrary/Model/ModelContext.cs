@@ -1,24 +1,32 @@
 /*
  * www.gso-koeln.de 2020
  */
+
 using Gso.FS.EFCore.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using System.Runtime.InteropServices;
+using System; 
 
 namespace CityLibrary.Model
 {
     public class ModelContext : DbContext
     {
         // Sqlite database file to utilize
-        public const string DataBaseFile = @"../../../CityLibrary.Sqlite";
+        //if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+        
+        public const string DataBaseFilemacOS = @"../../../CityLibrary.Sqlite";
+        public const string DataBaseFileWinOS = @"..\..\..\CityLibrary.Sqlite";
         public static ILoggerFactory loggerFactory = null;
         public DbSet<Person> Persons { get; set; } // Person Cache
         public DbSet<Medium> Mediums { get; set; } // Medium Cache
         public DbSet<Item> Items { get; set; } // Item Cache
 
-        protected override void OnConfiguring(DbContextOptionsBuilder dcob) {
+        protected override void OnConfiguring(DbContextOptionsBuilder dcob)
+        {
             // enable logging
-            if (loggerFactory == null) {
+            if (loggerFactory == null)
+            {
                 //loggerFactory = LoggerFactory.Create(lbldr => lbldr.AddDebug());
                 //loggerFactory = LoggerFactory.Create(lbldr => lbldr.AddConsole());
                 //loggerFactory = LoggerFactory.Create(lbldr => lbldr.AddFilter("Microsoft.EntityFrameworkCore.Database.Command", LogLevel.Information).AddConsole());
@@ -33,7 +41,11 @@ namespace CityLibrary.Model
             dcob = dcob.UseLoggerFactory(loggerFactory);
 
             // inject Sqlite usage
-            dcob.UseSqlite("Data Source=" + DataBaseFile);
+            //if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            //    dcob.UseSqlite("Data Source=" + DataBaseFileWinOS);
+            //else
+            //    dcob.UseSqlite("Data Source=" + DataBaseFileWinOS);
+            dcob.UseSqlite("Data Source=" + GetDataBaseFile());
         }
         protected override void OnModelCreating(ModelBuilder builder) {
             // the class hierarchy subtypes
@@ -52,5 +64,14 @@ namespace CityLibrary.Model
             builder.Entity<Medium>().Property(b => b.Identifier).HasField("identifier");
             builder.Entity<Item>().Property(b => b.Id).HasField("id");
         }
+
+        public string GetDataBaseFile()
+        {
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                return DataBaseFileWinOS;
+            else
+                return DataBaseFilemacOS;                 
+        }
+
     }
 }

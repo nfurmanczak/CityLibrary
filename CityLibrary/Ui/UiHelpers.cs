@@ -1,15 +1,21 @@
 ﻿using CityLibrary.Svc;
 using System;
+using System.Runtime.InteropServices;
 
 namespace CityLibrary.Ui
 {
     public static class UiHelpers
     {
         public static void InitConsole() {
-            //Console.WindowWidth = 80;
-            //Console.WindowHeight = 30;
-            //Console.BufferWidth = 80;
-            //Console.BufferHeight = 1000;
+
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                Console.WindowWidth = 80;
+                Console.WindowHeight = 30;
+                Console.BufferWidth = 80;
+                Console.BufferHeight = 1000;
+            }
+
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.BackgroundColor = ConsoleColor.Gray;
             Console.Clear();
