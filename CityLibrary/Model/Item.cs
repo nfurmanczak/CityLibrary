@@ -9,6 +9,10 @@ namespace CityLibrary.Model
         public int Id { get { return id; } } // readonly access
         public ItemState State { get; set; }
         public string StorageLocation { get; set; }
+        public Medium MediumId { get; set; }
+        public ItemAvailable Available { get; set; }
+
     }
     public enum ItemState { Usable, Ordered, Defect }
+    public enum ItemAvailable { InStock, borrowed }
 }

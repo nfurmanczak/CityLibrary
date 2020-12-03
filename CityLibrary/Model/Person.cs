@@ -18,7 +18,8 @@ namespace CityLibrary.Model
 
         // dummy properties to be supported later
 
-        public string UserName { get { return "FAKE"; } }
+        public string UserName { get { return FirstName.Substring(0, 1).ToLower() + LastName.Substring(0, 3).ToLower(); } }
+                
         public int PwdHash { get { return "4711".GetHashCode(); } }
     }
 }

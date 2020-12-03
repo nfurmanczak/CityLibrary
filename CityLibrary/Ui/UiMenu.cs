@@ -2,7 +2,9 @@
 using CityLibrary.Svc;
 using System;
 using System.Collections.Generic;
-using System.Linq; 
+using System.Linq;
+using System.Security.Cryptography;
+using System.Threading.Channels;
 
 namespace CityLibrary.Ui
 {
@@ -21,6 +23,8 @@ namespace CityLibrary.Ui
             var menuItems = new UiMenuItem[] {
                 new UiMenuItem('A', "Anmelden", Login),
                 new UiMenuItem('S', "Medium suchen", FindMedium),
+                new UiMenuItem('D', "Medium ausleihen", BorrowMedium),
+                new UiMenuItem('Q', "Beenden", ExitApp),
             };
 
             // show menu items
@@ -58,7 +62,7 @@ namespace CityLibrary.Ui
             var pwHash = UiHelpers.AskValue("Kennwort").GetHashCode();
 
             // authenticate user
-            if (svc.FindPersonByCredentials(user, pwHash, out Person person)) {
+            if (svc.FindPersonByCredentials(user.ToLower(), pwHash, out Person person)) {
                 Console.WriteLine("Benutzername: " + user);
                 Console.WriteLine("Password: " + pwHash);
                 Console.WriteLine("Fake result:");
@@ -126,7 +130,54 @@ namespace CityLibrary.Ui
             */
         }
 
-        //     
+        public void BorrowMedium()
+        {
+            UiHelpers.ShowHeader("Medium suchen");
+
+            Console.Write("Suchmuster: ");
+            string userSearchString = Console.ReadLine();
+
+            //IList<Medium> result = svc.FindMedium(userSearchString, 5, 1);
+            IList<Item> result = svc.FindItem(userSearchString);
+
+            PrintItemResult(result);
+
+            Console.Write("Medium ausleihen? (y/n)");
+            string borrowItem = Console.ReadLine();
+ 
+            if (borrowItem == "y")
+            {
+                Console.Write("Nummer: ");
+                Item i1 = result[Convert.ToInt32(Console.ReadLine())-1];
+                svc.BorrowItem(i1);   
+            }
+             
+         }
+
+        public void ExitApp()
+        {
+            System.Environment.Exit(0); 
+        }
+
+
+
+        public void PrintItemResult(IList<Item> result)
+        {
+            int i = 0;
+
+            if (result.Count == 0)
+                Console.WriteLine("Nichts gefunden");
+            else
+            {
+                foreach (var item in result)
+                {
+                    Console.WriteLine($"{++i:d2} {item.MediumId.Identifier}");
+                    Console.WriteLine($"     [{item.MediumId.Title}] [{item.MediumId.Author}] {item.Available}");
+                }
+            }
+        }
+
+
         public void PrintResult(IList<Medium> result)
         {
             int i = 0;
