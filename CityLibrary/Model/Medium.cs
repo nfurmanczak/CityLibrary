@@ -21,6 +21,8 @@ namespace CityLibrary.Model
         public string Kind { get; set; }
         public string Author { get; set; }
         public string Publisher { get; set; }
-        public Decimal Price { get; set; }
+        public decimal Price { get; set; }
     }
 }
+
+//db.Mediums.Where(i => i.Identifier.Contains("9783789115172"))

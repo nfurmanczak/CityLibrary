@@ -72,8 +72,8 @@ namespace CityLibrary.Svc
                 IDictionary<string, int> hdrs = null;
 
                 // field mapping
-                const string FirstName = "Surname";
-                const string LastName = "GivenName";
+                const string FirstName = "GivenName";
+                const string LastName = "Surname";
                 const string Birthday = "Birthday";
 
                 // process expected header

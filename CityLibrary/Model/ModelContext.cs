@@ -4,13 +4,18 @@
 using Gso.FS.EFCore.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using System.Runtime.InteropServices;
+
 
 namespace CityLibrary.Model
 {
     public class ModelContext : DbContext
     {
         // Sqlite database file to utilize
-        public const string DataBaseFile = @"..\..\..\CityLibrary.Sqlite";
+        //if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+        
+        public const string DataBaseFilemacOS = @"../../../CityLibrary.Sqlite";
+        public const string DataBaseFileWinOS = @"..\..\..\CityLibrary.Sqlite";
         public static ILoggerFactory loggerFactory = null;
         public DbSet<Person> Persons { get; set; } // Person Cache
         public DbSet<Medium> Mediums { get; set; } // Medium Cache
@@ -33,7 +38,7 @@ namespace CityLibrary.Model
             dcob = dcob.UseLoggerFactory(loggerFactory);
 
             // inject Sqlite usage
-            dcob.UseSqlite("Data Source=" + DataBaseFile);
+            dcob.UseSqlite("Data Source=" + GetDataBaseFile());
         }
         protected override void OnModelCreating(ModelBuilder builder) {
             // the class hierarchy subtypes
@@ -52,5 +57,14 @@ namespace CityLibrary.Model
             builder.Entity<Medium>().Property(b => b.Identifier).HasField("identifier");
             builder.Entity<Item>().Property(b => b.Id).HasField("id");
         }
+
+        public string GetDataBaseFile()
+        {
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                return DataBaseFileWinOS;
+            else
+                return DataBaseFilemacOS;                 
+        }
+
     }
 }

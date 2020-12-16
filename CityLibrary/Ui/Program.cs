@@ -8,6 +8,8 @@ using Gso.FS.EFCore.Logging;
 using Microsoft.EntityFrameworkCore; // Include()
 using System;
 using System.Linq;
+using System.IO;
+using System.Runtime.InteropServices;
 
 namespace CityLibrary.Ui
 {
@@ -21,7 +23,10 @@ namespace CityLibrary.Ui
             UiHelpers.InitConsole();
 
             // drop database file for testing purpose
-            //File.Delete(ModelContext.DataBaseFile);
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                File.Delete(ModelContext.DataBaseFileWinOS);
+            else
+                File.Delete(ModelContext.DataBaseFilemacOS);
 
             using (var db = new ModelContext()) {
                 // create DB if not exists
@@ -53,9 +58,18 @@ namespace CityLibrary.Ui
                     db.SaveChanges();
                 }
                 if (db.Items.Count() == 0) {
-                    db.Add(new Item()); // { Id = 1000 });
-                    db.Add(new Item());
-                    db.Add(new Item());
+                    // 9783406745713 Kapital und Ideologie
+                    db.Add(new Item() { Available = ItemAvailable.InStock, State = ItemState.Usable, StorageLocation = "Regal 1", MediumId = db.Mediums.Where(i => i.Identifier.Contains("9783406745713")).SingleOrDefault() });
+                    db.Add(new Item() { Available = ItemAvailable.InStock, State = ItemState.Usable, StorageLocation = "Regal 1", MediumId = db.Mediums.Where(i => i.Identifier.Contains("9783406745713")).SingleOrDefault() });
+                    db.Add(new Item() { Available = ItemAvailable.borrowed, State = ItemState.Usable, StorageLocation = "Regal 1", MediumId = db.Mediums.Where(i => i.Identifier.Contains("9783406745713")).SingleOrDefault() });
+                    db.Add(new Item() { Available = ItemAvailable.borrowed, State = ItemState.Usable, StorageLocation = "Regal 2", MediumId = db.Mediums.Where(i => i.Identifier.Contains("9783406745713")).SingleOrDefault() });
+                    // 9783551556912 Die Abenteuer des Apollo. Die Gruft des Tyranne
+                    db.Add(new Item() { Available = ItemAvailable.InStock, State = ItemState.Usable, StorageLocation = "Regal 2", MediumId = db.Mediums.Where(i => i.Identifier.Contains("9783551556912")).SingleOrDefault() });
+                    db.Add(new Item() { Available = ItemAvailable.InStock, State = ItemState.Defect, StorageLocation = "Regal 2", MediumId = db.Mediums.Where(i => i.Identifier.Contains("9783551556912")).SingleOrDefault() });
+                    // 9783789115172 Mein Weg zum Fußballprofi
+                    db.Add(new Item() { Available = ItemAvailable.InStock, State = ItemState.Usable, StorageLocation = "Regal 3", MediumId = db.Mediums.Where(i => i.Identifier.Contains("9783789115172")).SingleOrDefault() });
+                    db.Add(new Item() { Available = ItemAvailable.InStock, State = ItemState.Ordered, StorageLocation = "Regal 3", MediumId = db.Mediums.Where(i => i.Identifier.Contains("9783789115172")).SingleOrDefault() });
+                    db.Add(new Item() { Available = ItemAvailable.borrowed, State = ItemState.Defect, StorageLocation = "Regal 3", MediumId = db.Mediums.Where(i => i.Identifier.Contains("9783789115172")).SingleOrDefault() });
                     db.SaveChanges();
                 }
 
@@ -72,6 +86,13 @@ namespace CityLibrary.Ui
 
                 Console.WriteLine("\nDone.");
                 Console.ReadLine();
+
+                foreach (var item in db.Persons.ToList())
+                {
+                    Console.WriteLine(item.FirstName);
+                    Console.WriteLine(item.LastName);
+                }
+                
             }
         }
 
